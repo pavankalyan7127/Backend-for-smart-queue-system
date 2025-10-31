@@ -5,7 +5,6 @@ import dotenv from "dotenv";
 import { connectDB } from "./config/db.js";
 import apiRoutes from "./routes/api.js";
 import { startDailySummaryScheduler } from "./services/dailySummaryScheduler.js";
-import { initPoller } from "./services/poller.js"; // assuming you have this
 
 dotenv.config();
 
@@ -40,3 +39,4 @@ if (import.meta.url === `file://${process.argv[1]}`) {
 }
 
 export { start };
+
