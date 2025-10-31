@@ -4,7 +4,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import { connectDB } from "./config/db.js";
 import apiRoutes from "./routes/api.js";
-import { initPoller } from "./services/poller.js";
+
 import startDailySummaryScheduler from "./services/dailySummaryScheduler.js";
 
 
@@ -39,4 +39,5 @@ async function start() {
 if (require.main === module) {
   start();
 }
+
 start();
