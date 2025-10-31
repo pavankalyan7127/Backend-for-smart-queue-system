@@ -5,7 +5,9 @@ import dotenv from "dotenv";
 import { connectDB } from "./config/db.js";
 import apiRoutes from "./routes/api.js";
 
-import DailySummary from "./services/dailySummaryScheduler.js";
+
+import { startDailySummaryScheduler } from "./services/dailySummaryScheduler.js";
+
 
 
 
